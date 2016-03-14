@@ -8,18 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="tonybfox">
 
     <title>Proto{UI} beta - Design once and for all</title>
-
-    <!-- Custom CSS -->
-    <link href="/styles/landing-page.css" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
@@ -45,7 +36,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand topnav" href="#"><span style="font-family: 'Raleway', sans-serif;">proto</span><span style="font-family: 'Noticia Text', serif;">{UI}</span> <sup>beta</sup></a>
- 
+
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -139,7 +130,7 @@
 
     </div>
     <!-- /.content-section-b -->
-    
+
 
 	<a name="themes"></a>
     <div class="content-section-a">
@@ -185,7 +176,7 @@
 
     </div>
     <!-- /.content-section-b -->
-    
+
 
 	<a name="export"></a>
     <div class="content-section-a">
@@ -221,7 +212,7 @@
     <!-- /.content-section-a -->
 
    	<a name="beta"></a>
-   	
+
     <div class="content-section-b">
 
         <div class="container">
@@ -272,7 +263,7 @@
                         </li>
                         <li>
                             <a href="https://twitter.com/protoui" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>                       
+                        </li>
                          <li>
                             <a href="https://facebook.com/protoui" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                         </li>
@@ -313,6 +304,15 @@
         </div>
     </footer>
 
+
+        <!-- Custom CSS -->
+        <link href="/styles/landing-page.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"/>
@@ -320,7 +320,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    
+
 <script type="text/javascript">
   WebFontConfig = {
     google: { families: [ 'Raleway:600:latin', 'Noticia+Text::latin' ] }
@@ -334,26 +334,7 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
   })(); </script>
-    
+
 
 </body>
-
-<?php
-
-exit();
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-date_default_timezone_set('GMT');
-
-require 'vendor/autoload.php';
-require 'app/config/config.php';
-
-//Instantiate a Slim application
-$app = new \Slim\Slim();
-
-// Load routes
-require 'app/routes/projects.php';
-
-
-$app->run();
-
+</html>
